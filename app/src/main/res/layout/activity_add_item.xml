@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/head_cloud_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddItemActivity">
+
+    <Button
+        android:id="@+id/search_back_button"
+        android:layout_width="45dp"
+        android:layout_height="52dp"
+        android:onClick="back"
+        android:background="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/addItem"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_edit_title"
+        android:layout_width="292dp"
+        android:layout_height="60dp"
+        android:background="@drawable/account_text_background"
+        android:gravity="center"
+        android:hint="@string/title"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418" />
+
+    <EditText
+        android:id="@+id/add_edit_account"
+        android:layout_width="292dp"
+        android:layout_height="60dp"
+        android:background="@drawable/account_text_background"
+        android:gravity="center"
+        android:hint="@string/account"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_edit_title"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <EditText
+        android:id="@+id/add_edit_password"
+        android:layout_width="292dp"
+        android:layout_height="60dp"
+        android:background="@drawable/password_text_background"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_edit_account"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/sign_in"
+        android:gravity="center"
+        android:onClick="addItem"
+        android:text="@string/addItem"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_edit_password"
+        app:layout_constraintVertical_bias="0.368" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

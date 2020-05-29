@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">PsdNote</string>
+    <string name="name">PasswordNote</string>
+    <string name="login_title">Logged In</string>
+    <string name="account">account</string>
+    <string name="password">password</string>
+
+    <string name="go">Go !</string>
+
+    <string name="username_empty">The user name is empty, please re-enter it!</string>
+    <string name="password_empty">The password is empty, please re-enter it!</string>
+
+    <string name="login_failed">用户名或者密码错误！</string>
+    <string name="addItem">add Item</string>
+    <string name="title">title</string>
+    <string name="clean">clean data</string>
+
+</resources>
