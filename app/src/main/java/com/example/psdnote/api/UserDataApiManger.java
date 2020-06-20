@@ -23,6 +23,4 @@ public class UserDataApiManger {
     public static Observable<LoginData> getUserData(LoginUserUp loginUserUp) {
         return apiManager.getLoginUser(loginUserUp.getEmail(),loginUserUp.getPassword());
     }
-
-
 }
